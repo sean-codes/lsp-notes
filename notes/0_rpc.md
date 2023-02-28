@@ -12,11 +12,12 @@ This works by the client application running the server as a child process. Then
 > child process: https://nodejs.org/api/child_process.html
 
 # Example
+server.js
 ```js
-// server.js
 console.log('hello world')
 ```
 
+client.js
 ```js
 // https://nodejs.org/api/child_process.html
 import * as cp from 'child_process'
