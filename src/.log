@@ -1,0 +1,75 @@
+Logger
+------------------------------- 
+
+1676868739261 : "server: starting..."
+1676868739267 : "connection made"
+1676868739274 : "demo!"
+1676868739280 : "onInitialize"
+1676868739281 : {
+    "processId": 52061,
+    "rootUri": "file:///Users/workbook/Desktop/ts-server/notes.md",
+    "capabilities": {}
+}
+1676868739281 : "returning result"
+1676868739282 : "onDidOpenTextDocument"
+1676868739282 : "meow meow"
+1676868739282 : {
+    "_uri": "awda",
+    "_languageId": "awd",
+    "_version": 0,
+    "_content": "meow MEOW"
+}
+1676868739283 : "before settings"
+1676868739283 : "after"
+1676868739284 : "send diags"
+1676868739284 : [
+    {
+        "severity": 2,
+        "range": {
+            "start": {
+                "line": 0,
+                "character": 5
+            },
+            "end": {
+                "line": 0,
+                "character": 9
+            }
+        },
+        "message": "MEOW is all uppercase.",
+        "source": "ex",
+        "relatedInformation": [
+            {
+                "location": {
+                    "uri": "awda",
+                    "range": {
+                        "start": {
+                            "line": 0,
+                            "character": 5
+                        },
+                        "end": {
+                            "line": 0,
+                            "character": 9
+                        }
+                    }
+                },
+                "message": "Spelling matters"
+            },
+            {
+                "location": {
+                    "uri": "awda",
+                    "range": {
+                        "start": {
+                            "line": 0,
+                            "character": 5
+                        },
+                        "end": {
+                            "line": 0,
+                            "character": 9
+                        }
+                    }
+                },
+                "message": "Particularly for names"
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "ts-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/client.js",
+  "type": "module",
+  "scripts": {
+    "example_0": "node ./examples/0_rpc/client.js",
+    "start": "typescript-language-server --stdio",
+    "help": "typescript-language-server -help",
+    "dev": "npm run build && node ./bin/client.js --stdio",
+    "dev:server": "npm run build && node ./bin/server.js --stdio",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/typescript/bin/tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^4.9.5",
+    "typescript-language-server": "^3.3.0",
+    "vscode-jsonrpc": "^8.1.0",
+    "vscode-languageclient": "^8.1.0",
+    "vscode-languageserver": "^8.1.0",
+    "vscode-languageserver-protocol": "^3.17.3",
+    "vscode-languageserver-textdocument": "^1.0.8",
+    "ws": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0"
+  }
+}

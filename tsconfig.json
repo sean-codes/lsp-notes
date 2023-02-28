@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "bin",
+        "module": "ESNext",
+        "moduleResolution": "node"
+    },
+    "files": [
+        "./src/client.ts",
+        "./src/server.ts",
+        "./src/logger.ts",
+    ]
+}
+
