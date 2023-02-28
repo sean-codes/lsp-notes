@@ -46,9 +46,12 @@ server.stderr.on('data', (data) => {
 server.on('close', (code) => {
   console.log(`child process exited with code ${code}`)
 })
-
-
 ```
+
+# Why
+I would have assumed sockets for this but rpc is more simple!
+
+This seems to be an important way for two programs to communicate since it allows them both to be written in two completely different languages.
 
 
 # References
