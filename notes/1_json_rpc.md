@@ -13,6 +13,7 @@ client in = server out
 
 > i believe rpc is peer to peer normally. Using client/server because it was the termanology i seen around microsoft repository.
 
+
 # basic setup
 See [example 1_json-rpc](../examples/1_json-rpc)
 
@@ -73,8 +74,10 @@ When using vscode jsonrpc you can specify a notification type and listen on thos
 var notificationX = new rpc.NotificationType('x')
 connection.sendNotification(notificationX, 'hello from client!!')
 
+//--------------------------------------
+// onNotification handler options
+//--------------------------------------
 
-// listen for that notificaiton type
 // option 1. set onNotification notificationType. function only calls
 // for notificationX now!
 connection.onNotification(notificationX, (message) => {
@@ -87,6 +90,9 @@ connection.onNotification((notificationType, message) => {
    ...
 })
 ```
+
+## Server logger
+To see what is happening on the server we can use a simple text file logger found in the util folder. Open `.log` in the root folder
 
 References
 -------------------------------------
