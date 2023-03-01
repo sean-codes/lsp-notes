@@ -55,7 +55,4 @@ This seems to be an important way for two programs to communicate since it allow
 
 
 # References
-https://www.jsonrpc.org/
 https://en.wikipedia.org/wiki/Remote_procedure_call
-node / go project https://blog.logrocket.com/introduction-to-rpc-using-go-and-node/
-lsp https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc

@@ -1,5 +1,10 @@
 Logger
 ------------------------------- 
 
-hello
-hello 4
+1677643498528 : [
+   "server.js onNotification",
+   "x",
+   [
+      "hello from client!!"
+   ]
+]
