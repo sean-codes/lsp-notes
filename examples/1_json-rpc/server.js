@@ -1,4 +1,4 @@
-import * as rpc from 'vscode-jsonrpc/node.js'
+import * as rpc from 'vscode-jsonrpc'
 // we can use a text file to see what is happening on the server
 import * as logger from '../../util/logger.js'
 logger.clear()

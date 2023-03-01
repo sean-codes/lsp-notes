@@ -1,10 +1,45 @@
 Logger
 ------------------------------- 
 
-1677643498528 : [
-   "server.js onNotification",
-   "x",
+1677702847238 : [
+   "server starting..."
+]
+1677702847256 : [
+   "server connection.onInitialize",
+   {
+      "processId": 0,
+      "rootUri": "",
+      "capabilities": {}
+   }
+]
+1677702847266 : [
+   "onDidOpenTextDocument",
+   {
+      "textDocument": [
+         "",
+         "",
+         0,
+         "this is a TEST"
+      ]
+   }
+]
+1677702847267 : [
+   "server diagnostics",
    [
-      "hello from client!!"
+      {
+         "source": "ex",
+         "message": "TEST is all uppercase.",
+         "severity": 2,
+         "range": {
+            "start": {
+               "line": 0,
+               "character": 10
+            },
+            "end": {
+               "line": 0,
+               "character": 14
+            }
+         }
+      }
    ]
 ]

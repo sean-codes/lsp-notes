@@ -7,6 +7,7 @@
   "scripts": {
     "example_0": "node ./examples/0_rpc/client.js",
     "example_1": "node ./examples/1_json-rpc/client.js",
+    "example_2": "node ./examples/2_lsp_text/client.js",
     "start": "typescript-language-server --stdio",
     "help": "typescript-language-server -help",
     "dev": "npm run build && node ./bin/client.js --stdio",
