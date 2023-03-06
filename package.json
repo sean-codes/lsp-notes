@@ -8,6 +8,7 @@
     "example_0": "node ./examples/0_rpc/client.js",
     "example_1": "node ./examples/1_json-rpc/client.js",
     "example_2": "node ./examples/2_lsp_text/client.js",
+    "example_3": "node ./examples/3_lsp_server/client.js",
     "start": "typescript-language-server --stdio",
     "help": "typescript-language-server -help",
     "dev": "npm run build && node ./bin/client.js --stdio",
@@ -19,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "tslib": "^2.5.0",
     "typescript": "^4.9.5",
     "typescript-language-server": "^3.3.0",
     "vscode-jsonrpc": "^8.1.0",

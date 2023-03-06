@@ -8,25 +8,37 @@ The protocol for communication has been defined on microsofts website. We are go
 
 lifecycle: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#lifeCycleMessages
 
+### Vocabulary
+**capabilities** = goto, autocomplete, etc
+**diagnostics** = errors / warnings 
+
 ### Basics
 ------
-1. initialize
-2. send over capabilities (goto, autocomplete, etc)
-3. send notifications (open file, change file, etc)
+1. initialize with capabilities (request)
+3. send notifications/diagnostics (open file, change file, etc)
 4. exit (when done)
 
 
+> note: these basic bits like initialization and diagnostics seem to often have specifically defined function! For example; `sendRequest, onInitialize, sendDiagnostics`. We want to try and use these even though getting javascript objects to match the typescript makes it look yikes :< 
 
 #### Initialize
 
-From the client send an initialization request
+From the client send an initialization request. 
+
+**NOTE:** a request in json rpc must be responded to. Unlike notifications `sendRequest` is thenable!
+
 ```js
-//client.js
-var initializeRequest = lsp.InitializeRequest.method
-connection.sendRequest(initializeRequest, {
+// client.js
+connection.sendRequest(lsp.InitializeRequest, {
    processId: 0,
    rootUri: '',
    capabilities: {},
+}).then((r) => {
+   console.log('Client Initialized!')
+
+
+   // can do anything!
+   sendOpenFileNotification() 
 })
 ```
 
@@ -34,7 +46,7 @@ connection.sendRequest(initializeRequest, {
 On the server listen for on `onInitialize` and send back a `InitializedNotification`!
 
 ```js
-//server.js
+// server.js
 connection.onInitialize((params) => {
    logger.log('server connection.onInitialize', params)
 
@@ -47,26 +59,31 @@ connection.onInitialize((params) => {
       }
    }
 
-   // send initialized complete!
-   connection.sendNotification(lsp.InitializedNotification.method, result)
+   // send initialized complete! (this shows up as the argument for then)
+   return result
 })
 ```
 
 
-On the client listen for `onInitialized`. Once this is complete we can send over our document!
+# Send file open and get diagnostics
+We will send an open notification with text document parameters to the server.
 
+To make it easier on the server we will write the text document as an array `[uri, languageId, version, `
 ```js
-connection.onInitialized(() => {
-   console.log('Client Initialized!')
+function sendOpenFileNotification() {
+   var exampleText = 'this is a TEST'
+   // send this as an array to use as params to create on server
+   var textDocument = ['', '', 0, exampleText] 
 
-   // after initialization can start sending notifications!
-})
+   connection.sendNotification(lsp.DidOpenTextDocumentNotification, { textDocument 
+   })
+}
 ```
 
+---
 
+#### References:
 
-
-
-References:
+json rpc: https://www.jsonrpc.org/specification
 protocol: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#lifeCycleMessages
 microsoft lsp: https://microsoft.github.io/language-server-protocol/

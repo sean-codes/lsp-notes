@@ -1,0 +1,52 @@
+Info 0    [09:07:04.531] Starting TS Server
+Info 1    [09:07:04.532] Version: 4.9.5
+Info 2    [09:07:04.532] Arguments: /Users/workbook/.nvm/versions/node/v16.18.1/bin/node /Users/workbook/Desktop/ts-server/node_modules/typescript/lib/tsserver.js --serverMode partialSemantic --useInferredProjectPerProjectRoot --disableAutomaticTypingAcquisition --cancellationPipeName /private/var/folders/t6/hrw6h18d155gr4pzkvprm45h0000gn/T/74618f0295d2df47f5b4d4f2fc5c09aa/tscancellation* --logVerbosity verbose --logFile /Users/workbook/Desktop/ts-server/ts-server-log/tsserver-log-sWI2sT/tsserver.log --locale en --validateDefaultNpmLocation --useNodeIpc
+Info 3    [09:07:04.532] Platform: darwin NodeVersion: 16 CaseSensitive: false
+Info 4    [09:07:04.532] ServerMode: 1 syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [09:07:04.542] request:
+    {
+      "seq": 0,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "formatOptions": {
+          "newLineCharacter": "\n"
+        },
+        "preferences": {
+          "allowIncompleteCompletions": true,
+          "allowRenameOfImportPath": true,
+          "allowTextChangesInNewFiles": true,
+          "disableLineTextInReferences": true,
+          "disableSuggestions": false,
+          "displayPartsForJSDoc": true,
+          "generateReturnInDocTemplate": true,
+          "importModuleSpecifierEnding": "auto",
+          "importModuleSpecifierPreference": "shortest",
+          "includeAutomaticOptionalChainCompletions": true,
+          "includeCompletionsForImportStatements": true,
+          "includeCompletionsForModuleExports": true,
+          "includeCompletionsWithClassMemberSnippets": true,
+          "includeCompletionsWithInsertText": true,
+          "includeCompletionsWithObjectLiteralMethodSnippets": true,
+          "includeCompletionsWithSnippetText": true,
+          "includeInlayEnumMemberValueHints": false,
+          "includeInlayFunctionLikeReturnTypeHints": false,
+          "includeInlayFunctionParameterTypeHints": false,
+          "includeInlayParameterNameHints": "none",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": false,
+          "includeInlayVariableTypeHints": false,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includePackageJsonAutoImports": "auto",
+          "jsxAttributeCompletionStyle": "auto",
+          "lazyConfiguredProjectsFromExternalProject": false,
+          "providePrefixAndSuffixTextForRename": true,
+          "provideRefactorNotApplicableReason": true,
+          "quotePreference": "auto"
+        }
+      }
+    }
+Info 6    [09:07:04.542] Format host information updated
+Info 7    [09:07:04.542] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":0,"success":true}
+Perf 8    [09:07:04.543] 0::configure: async elapsed time (in milliseconds) 1.3250

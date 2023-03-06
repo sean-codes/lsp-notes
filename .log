@@ -1,10 +1,10 @@
 Logger
 ------------------------------- 
 
-1677702847238 : [
+1678076337516 : [
    "server starting..."
 ]
-1677702847256 : [
+1678076337533 : [
    "server connection.onInitialize",
    {
       "processId": 0,
@@ -12,7 +12,7 @@ Logger
       "capabilities": {}
    }
 ]
-1677702847266 : [
+1678076337545 : [
    "onDidOpenTextDocument",
    {
       "textDocument": [
@@ -23,7 +23,7 @@ Logger
       ]
    }
 ]
-1677702847267 : [
+1678076337545 : [
    "server diagnostics",
    [
       {

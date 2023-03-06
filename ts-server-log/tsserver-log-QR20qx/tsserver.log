@@ -1,0 +1,79 @@
+Info 0    [09:07:04.536] Starting TS Server
+Info 1    [09:07:04.537] Version: 4.9.5
+Info 2    [09:07:04.537] Arguments: /Users/workbook/.nvm/versions/node/v16.18.1/bin/node /Users/workbook/Desktop/ts-server/node_modules/typescript/lib/tsserver.js --useInferredProjectPerProjectRoot --cancellationPipeName /private/var/folders/t6/hrw6h18d155gr4pzkvprm45h0000gn/T/d96f85de6165541949e6cbb99c69bb96/tscancellation* --logVerbosity verbose --logFile /Users/workbook/Desktop/ts-server/ts-server-log/tsserver-log-QR20qx/tsserver.log --locale en --validateDefaultNpmLocation --useNodeIpc
+Info 3    [09:07:04.537] Platform: darwin NodeVersion: 16 CaseSensitive: false
+Info 4    [09:07:04.537] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [09:07:04.545] Binding...
+Info 6    [09:07:04.553] request:
+    {
+      "seq": 0,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "formatOptions": {
+          "newLineCharacter": "\n"
+        },
+        "preferences": {
+          "allowIncompleteCompletions": true,
+          "allowRenameOfImportPath": true,
+          "allowTextChangesInNewFiles": true,
+          "disableLineTextInReferences": true,
+          "disableSuggestions": false,
+          "displayPartsForJSDoc": true,
+          "generateReturnInDocTemplate": true,
+          "importModuleSpecifierEnding": "auto",
+          "importModuleSpecifierPreference": "shortest",
+          "includeAutomaticOptionalChainCompletions": true,
+          "includeCompletionsForImportStatements": true,
+          "includeCompletionsForModuleExports": true,
+          "includeCompletionsWithClassMemberSnippets": true,
+          "includeCompletionsWithInsertText": true,
+          "includeCompletionsWithObjectLiteralMethodSnippets": true,
+          "includeCompletionsWithSnippetText": true,
+          "includeInlayEnumMemberValueHints": false,
+          "includeInlayFunctionLikeReturnTypeHints": false,
+          "includeInlayFunctionParameterTypeHints": false,
+          "includeInlayParameterNameHints": "none",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": false,
+          "includeInlayVariableTypeHints": false,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includePackageJsonAutoImports": "auto",
+          "jsxAttributeCompletionStyle": "auto",
+          "lazyConfiguredProjectsFromExternalProject": false,
+          "providePrefixAndSuffixTextForRename": true,
+          "provideRefactorNotApplicableReason": true,
+          "quotePreference": "auto"
+        }
+      }
+    }
+Info 7    [09:07:04.554] Format host information updated
+Info 8    [09:07:04.555] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":0,"success":true}
+Perf 9    [09:07:04.555] 0::configure: async elapsed time (in milliseconds) 2.0994
+Info 10   [09:07:04.556] event:
+    {"seq":0,"type":"event","event":"typingsInstallerPid","body":{"pid":27516}}
+Info 11   [09:07:04.556] request:
+    {
+      "seq": 1,
+      "type": "request",
+      "command": "compilerOptionsForInferredProjects",
+      "arguments": {
+        "options": {
+          "module": "ESNext",
+          "moduleResolution": "Node",
+          "target": "ES2020",
+          "jsx": "React",
+          "strictNullChecks": true,
+          "strictFunctionTypes": true,
+          "sourceMap": true,
+          "allowJs": true,
+          "allowNonTsExtensions": true,
+          "allowSyntheticDefaultImports": true,
+          "resolveJsonModule": true
+        }
+      }
+    }
+Perf 12   [09:07:04.557] 1::compilerOptionsForInferredProjects: elapsed time (in milliseconds) 0.6248
+Info 13   [09:07:04.557] response:
+    {"seq":0,"type":"response","command":"compilerOptionsForInferredProjects","request_seq":1,"success":true,"body":true}

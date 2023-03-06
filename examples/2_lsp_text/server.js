@@ -30,7 +30,8 @@ connection.onInitialize((params) => {
    }
 
    // send initialized complete!
-   connection.sendNotification(lsp.InitializedNotification.method, result)
+   // connection.sendNotification(lsp.InitializedNotification.method, result)
+   return result
 })
 
 //----------------------------------------------

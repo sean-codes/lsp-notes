@@ -94,7 +94,7 @@ connection.onNotification((notificationType, message) => {
 ## Server logger
 To see what is happening on the server we can use a simple text file logger found in the util folder. Open `.log` in the root folder
 
-References
--------------------------------------
-github https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc
-json rpc: https://www.jsonrpc.org/
+#### References
+
+json rpc: https://www.jsonrpc.org/specification
+ms github: https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc
