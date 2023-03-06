@@ -16,18 +16,10 @@ var connection = lsp.createConnection(
 
 connection.listen()
 
-var initializeRequest = lsp.InitializeRequest
-connection.sendRequest(initializeRequest, {
+connection.sendRequest(lsp.InitializeRequest, {
    processId: process.pid,
    rootUri: 'file:///Users/workbook/Desktop/ts-server/notes.md',
    capabilities: {},
-   initializationOptions: {
-      tsserver: {
-         // logDirectory: '/Users/workbook/Desktop/ts-server/ts-server-log',
-         // logVerbosity: 'verbose'
-
-      }
-   }
 }).then((result) => {
    console.log('Client Initialized!')
    console.log('------------------------')
