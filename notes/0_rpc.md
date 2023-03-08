@@ -1,4 +1,9 @@
 # RPC
+
+```shell
+npm run example_0
+```
+
 Up to this point I believe I've only known how to transfer data between applications using sockets, databases, or file read/writes.
 
 I guess I never considered another way!
@@ -54,5 +59,5 @@ I would have assumed sockets for this but rpc is more simple!
 This seems to be an important way for two programs to communicate since it allows them both to be written in two completely different languages.
 
 
-# References
-https://en.wikipedia.org/wiki/Remote_procedure_call
+#### References
+- https://en.wikipedia.org/wiki/Remote_procedure_call

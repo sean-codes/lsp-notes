@@ -1,4 +1,7 @@
 # LSP Browser textarea
+```shell
+npm run example_4
+```
 
 Will try to figure out running an LSP Client and connecting to it through the browser using websockets.
 
@@ -50,6 +53,6 @@ Going to copy the client.js file from 3_lsp_server. Then convert it into a reusa
 
 
 #### References
-websockets: https://github.com/websockets/ws
-ws text basics: https://github.com/websockets/ws#sending-and-receiving-text-data
+- websockets: https://github.com/websockets/ws
+- ws text basics: https://github.com/websockets/ws#sending-and-receiving-text-data
 

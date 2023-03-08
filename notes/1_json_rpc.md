@@ -1,5 +1,9 @@
 # json rpc
 
+```shell
+npm run example_1
+```
+
 JSON RPC builds on rpc. Basically communication between the two using json! In the first example we did not send output from the client to server with JSON RPC we will!
 
 

@@ -1,4 +1,10 @@
 # lsp external
+
+```shell
+npm run example_3
+```
+
+
 the main benefit of lsp is that the servers can be written in any language and used in any language! This project will only have a `client.js` and it will run a installed server.
 
 We can find servers here: https://microsoft.github.io/language-server-protocol/implementors/servers/
@@ -52,5 +58,4 @@ function sendOpenFileNotification() {
 ---
 
 #### references
-
-https://github.com/microsoft/vscode-languageserver-node
+- https://github.com/microsoft/vscode-languageserver-node

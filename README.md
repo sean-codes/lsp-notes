@@ -25,7 +25,7 @@ npm run example_X
 
 
 # References
-https://www.jsonrpc.org/
-https://en.wikipedia.org/wiki/Remote_procedure_call
-node / go project https://blog.logrocket.com/introduction-to-rpc-using-go-and-node/
-lsp https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc
+- rpc: https://en.wikipedia.org/wiki/Remote_procedure_call
+- json-rpc: https://www.jsonrpc.org/
+- lsp: https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc
+- lsp github: https://github.com/microsoft/vscode-languageserver-node/tree/main/jsonrpc

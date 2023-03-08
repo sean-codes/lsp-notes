@@ -1,4 +1,7 @@
 # lsp language server protocol
+```shell
+npm run example_2
+```
 
 lsp does linting and helps with editor functions like goto definition / autocomplete.
 
@@ -9,23 +12,25 @@ The protocol for communication has been defined on microsofts website. We are go
 lifecycle: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#lifeCycleMessages
 
 ### Vocabulary
-**capabilities** = goto, autocomplete, etc
-**diagnostics** = errors / warnings 
+
+- **capabilities** = goto, autocomplete, etc
+- **diagnostics** = errors / warnings 
 
 ### Basics
 ------
+
 1. initialize with capabilities (request)
 3. send notifications/diagnostics (open file, change file, etc)
-4. exit (when done)
+4. exit/dispose (when done)
 
 
-> note: these basic bits like initialization and diagnostics seem to often have specifically defined function! For example; `sendRequest, onInitialize, sendDiagnostics`. We want to try and use these even though getting javascript objects to match the typescript makes it look yikes :< 
+> note: these basic bits like initialization and diagnostics seem to often have specifically defined functions! For example; `sendRequest, onInitialize, sendDiagnostics`. We want to try and use these even though getting javascript objects to match the typescript makes it look yikes :< 
 
 #### Initialize
 
 From the client send an initialization request. 
 
-**NOTE:** a request in json rpc must be responded to. Unlike notifications `sendRequest` is thenable!
+**NOTE:** a request in json rpc must be responded to. `sendRequest` is thenable!
 
 ```js
 // client.js
