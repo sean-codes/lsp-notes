@@ -4,7 +4,7 @@ Hello, these are some notes I took while exploring JSON RPC / Microsoft Language
 
 These start with rpc basics (i never used before!) and ends with running a typescript language server to parse a `<textarea>`
 
-
+![A example lsp textarea app](./example-lsp.gif)
 
 ## Examples / Notes:
 

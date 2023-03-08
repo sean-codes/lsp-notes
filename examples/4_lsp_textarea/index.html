@@ -7,43 +7,64 @@
     <title>Document</title>
     <style>
         html, body {
-            background: #222;
+            background: #2B2E37;
             font-family: monospace;
             padding: 0;
             margin: 0;
         }
+        body {
+            padding: 5rem 1rem;
+        }
         .app {
-            padding: 2rem;
-            border: 2px solid #fefefe;
+            ccpadding: 2rem;
+            border: 2px solid #07080A;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            max-width: 50rem;
+            margin: auto;
         }
         textarea {
+            background: #191B20;
+            color: #D8DADF;
             width: 100%;
             outline: none;
             border: none;
             padding: 1rem;
+            resize: none;
         }
         .diagnostics {
-            padding: 1rem;
+            width: 100%;
+            border-top: 2px solid #07080A;
+            background: #070709;
         }
-        .diagnostics .row {
-            color: #FFF;
-            display: flex;
-            gap: 1rem;
+        .diagnostics td {
+            padding: 1rem 1rem 0 1rem;
+            color: #568AF2;
+        }
+        .diagnostics tr:last-of-type td {
+            padding-bottom: 1rem;
+        }
+        td.range {
+            white-space: nowrap;
+        }
+        td.success {
+            color: #74C990;
         }
     </style>
 </head>
 
 <body>
     <div class="app">
-        <textarea name="" id="editor" rows="10">Meow meow</textarea>
-        <div class="diagnostics">
+        <textarea name="" id="editor" rows="10">var test = anUndefinedVariable</textarea>
+        <table class="diagnostics">
             <!--
             <div class="row">
                 <div class="range">ln: 0 pos: 0-4</div>
                 <div class="message">Unexpected keyword or identifier.</div>
             </div>
             -->
-        </div>
+            <tr class="row"><td>Getting Diagnostics...</td></tr>
+        </table>
     </div>
     <script>
         var editor = document.querySelector('#editor')
@@ -110,10 +131,18 @@
                 var message = row.message
 
                 htmlDiag.innerHTML += `
-                    <div class="row">
-                        <div class="range">ln: ${ln} pos: ${pos}</div>
-                        <div class="message">${message}</div>
-                    </div>
+                    <tr>
+                        <td class="range">ln: ${ln} pos: ${pos}</td>
+                        <td class="message">${message}</td>
+                    </tr>
+                `
+            }
+
+            if (!data.diagnostics.length) {
+                htmlDiag.innerHTML = `
+                    <tr>
+                        <td class="success">No errors!</td>
+                    </tr>
                 `
             }
         }

@@ -50,7 +50,7 @@ wsServer.on('connection', (ws, req) => {
 
    ws.on('close', () => {
       console.log('closing socket')
-      lspConnection.close()
+      lspConnection.dispose()
    })
 
    sockets.push(socket)
