@@ -9,12 +9,7 @@
     "example_1": "node ./examples/1_json-rpc/client.js",
     "example_2": "node ./examples/2_lsp_text/client.js",
     "example_3": "node ./examples/3_lsp_server/client.js",
-    "start": "typescript-language-server --stdio",
-    "help": "typescript-language-server -help",
-    "dev": "npm run build && node ./bin/client.js --stdio",
-    "dev:server": "npm run build && node ./bin/server.js --stdio",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/typescript/bin/tsc"
+    "example_4": "node ./examples/4_lsp_textarea/webapp.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +19,6 @@
     "typescript": "^4.9.5",
     "typescript-language-server": "^3.3.0",
     "vscode-jsonrpc": "^8.1.0",
-    "vscode-languageclient": "^8.1.0",
     "vscode-languageserver": "^8.1.0",
     "vscode-languageserver-protocol": "^3.17.3",
     "vscode-languageserver-textdocument": "^1.0.8",

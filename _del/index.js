@@ -68,7 +68,6 @@ wsServer.on('connection', (ws, req) => {
 
 function onSocketMessage(socket, { id, type, data }) {
     // console.log(id, data, type)
-
     switch (type) {
         case 'doc':
             // console.log('doc?', data)
