@@ -2,6 +2,7 @@
   "name": "ts-server",
   "version": "1.0.0",
   "description": "notes / examples on language server protocol",
+  "type": "module",
   "scripts": {
     "example_0": "node ./examples/0_rpc/client.js",
     "example_1": "node ./examples/1_json-rpc/client.js",

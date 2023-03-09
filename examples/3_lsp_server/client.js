@@ -18,7 +18,7 @@ connection.listen()
 
 connection.sendRequest(lsp.InitializeRequest, {
    processId: process.pid,
-   rootUri: 'file:///Users/workbook/Desktop/ts-server/notes.md',
+   rootUri: '',
    capabilities: {},
 }).then((result) => {
    console.log('Client Initialized!')

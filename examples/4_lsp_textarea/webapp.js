@@ -68,4 +68,6 @@ function onSocketMessage(socket, { type, data }) {
 }
 
 
-console.log(`[HTTP PORT] 1180`)
+console.log('[ webapp started ]')
+console.log('-----------------------')
+console.log('http://localhost:1180')
