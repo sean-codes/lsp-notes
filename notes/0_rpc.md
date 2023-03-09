@@ -13,19 +13,18 @@ This works by the client application running the server as a child process. Then
 > child process: https://nodejs.org/api/child_process.html
 
 # Example
-
 ```shell
 npm run example_0
 ```
 
 [See complete code](https://github.com/sean-codes/lsp-notes/tree/main/examples/0_rpc)
 
-server.js
+[server.js](https://github.com/sean-codes/lsp-notes/blob/main/examples/0_rpc/server.js)
 ```js
 console.log('hello world')
 ```
 
-client.js
+[client.js](https://github.com/sean-codes/lsp-notes/blob/main/examples/0_rpc/client.js)
 ```js
 // https://nodejs.org/api/child_process.html
 import * as cp from 'child_process'
