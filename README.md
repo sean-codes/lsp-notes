@@ -2,7 +2,7 @@
 
 Hello, these are some notes I took while exploring JSON RPC / Microsoft Language Server Protocol.
 
-These start with rpc basics (i never used before!) and ends with running a typescript language server to parse a `<textarea>`
+These start with rpc basics and end with running a typescript language server to parse a `<textarea>`
 
 ![A example lsp textarea app](./example-lsp.gif)
 

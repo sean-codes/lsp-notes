@@ -1,13 +1,16 @@
 # json rpc
 
+JSON RPC builds on rpc. Basically communication between the two using json! In the first example we did not send output from the client to server with JSON RPC we will!
+
+# Example
 ```shell
 npm run example_1
 ```
 
-JSON RPC builds on rpc. Basically communication between the two using json! In the first example we did not send output from the client to server with JSON RPC we will!
+[See complete code](https://github.com/sean-codes/lsp-notes/tree/main/examples/1_json-rpc)
 
 
-# initializing
+## initializing
 The client needs to be able to send standard in/out to the server and vise versa. To do this we create a message connection and reverse the in/out between
 
 ```
@@ -18,7 +21,7 @@ client in = server out
 > i believe rpc is peer to peer normally. Using client/server because it was the termanology i seen around microsoft repository.
 
 
-# basic setup
+## basic setup
 See [example 1_json-rpc](../examples/1_json-rpc)
 
 ```
@@ -70,7 +73,7 @@ connection.onNotification((message) => {
 })
 ```
 
-## Notification type
+### Notification type
 When using vscode jsonrpc you can specify a notification type and listen on those specific ones.
 
 ```js

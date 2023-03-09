@@ -1,9 +1,5 @@
 # RPC
 
-```shell
-npm run example_0
-```
-
 Up to this point I believe I've only known how to transfer data between applications using sockets, databases, or file read/writes.
 
 I guess I never considered another way!
@@ -17,6 +13,13 @@ This works by the client application running the server as a child process. Then
 > child process: https://nodejs.org/api/child_process.html
 
 # Example
+
+```shell
+npm run example_0
+```
+
+[See complete code](https://github.com/sean-codes/lsp-notes/tree/main/examples/0_rpc)
+
 server.js
 ```js
 console.log('hello world')

@@ -1,16 +1,19 @@
 # lsp external
-
-```shell
-npm run example_3
-```
-
-
 the main benefit of lsp is that the servers can be written in any language and used in any language! This project will only have a `client.js` and it will run a installed server.
 
 We can find servers here: https://microsoft.github.io/language-server-protocol/implementors/servers/
 
 For this project we will try to use the typescript server with our own client!
 https://github.com/typescript-language-server/typescript-language-server
+
+
+# Example
+```shell
+npm run example_3
+```
+
+[See complete code](https://github.com/sean-codes/lsp-notes/tree/main/examples/3_lsp_server)
+
 
 ## Run the server
 ```js

@@ -1,7 +1,4 @@
 # lsp language server protocol
-```shell
-npm run example_2
-```
 
 lsp does linting and helps with editor functions like goto definition / autocomplete.
 
@@ -15,6 +12,14 @@ lifecycle: https://microsoft.github.io/language-server-protocol/specifications/l
 
 - **capabilities** = goto, autocomplete, etc
 - **diagnostics** = errors / warnings 
+
+# Example
+```shell
+npm run example_2
+```
+
+[See complete code](https://github.com/sean-codes/lsp-notes/tree/main/examples/2_lsp_text)
+
 
 ### Basics
 ------
